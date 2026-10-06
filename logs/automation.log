@@ -1,0 +1,2058 @@
+2026-10-05 20:50:16,016 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 20:50:16,017 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 20:50:16,046 | INFO | Total CSV records: 6
+2026-10-05 20:50:16,046 | INFO | Valid records: 6
+2026-10-05 20:50:16,046 | INFO | Invalid records: 0
+2026-10-05 20:50:16,046 | INFO | Records selected for processing: 1
+2026-10-05 20:50:16,706 | INFO | Automation finished.
+2026-10-05 20:53:53,288 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 20:53:53,288 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 20:53:53,297 | INFO | Total CSV records: 6
+2026-10-05 20:53:53,297 | INFO | Valid records: 6
+2026-10-05 20:53:53,297 | INFO | Invalid records: 0
+2026-10-05 20:53:53,297 | INFO | Records selected for processing: 1
+2026-10-05 20:53:56,703 | INFO | Automation finished.
+2026-10-05 20:56:03,620 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 20:56:03,620 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 20:56:03,629 | INFO | Total CSV records: 6
+2026-10-05 20:56:03,629 | INFO | Valid records: 6
+2026-10-05 20:56:03,629 | INFO | Invalid records: 0
+2026-10-05 20:56:03,629 | INFO | Records selected for processing: 1
+2026-10-05 20:56:04,257 | INFO | Connected to existing Chrome session.
+2026-10-05 20:56:10,042 | INFO | Gemini Enterprise opened.
+2026-10-05 20:56:10,050 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-05 20:56:27,135 | ERROR | Attempt 1 failed to process Cloud Cost Optimization Intelligence Agent: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("New agent", exact=True)
+    - locator resolved to <button aria-haspopup="menu" aria-expanded="false" aria-label="New agent" id="create-menu-anchor" class="list-item create-agent-button-top" aria-describedby="create-menu-anchor-tooltip">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-welcome-dialog spk2="" next-gen="" luminous="" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy13ZWxjb21lLWRpYWxvZyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDIyXQ=="> </ucs-welcome-dialog> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-welcome-dialog spk2="" next-gen="" luminous="" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy13ZWxjb21lLWRpYWxvZyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDIyXQ=="> </ucs-welcome-dialog> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    28 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ucs-welcome-dialog spk2="" next-gen="" luminous="" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy13ZWxjb21lLWRpYWxvZyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDIyXQ=="> </ucs-welcome-dialog> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 154, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 34, in open_agent_builder
+    ).click()
+      ^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("New agent", exact=True)
+    - locator resolved to <button aria-haspopup="menu" aria-expanded="false" aria-label="New agent" id="create-menu-anchor" class="list-item create-agent-button-top" aria-describedby="create-menu-anchor-tooltip">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-welcome-dialog spk2="" next-gen="" luminous="" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy13ZWxjb21lLWRpYWxvZyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDIyXQ=="> </ucs-welcome-dialog> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-welcome-dialog spk2="" next-gen="" luminous="" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy13ZWxjb21lLWRpYWxvZyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDIyXQ=="> </ucs-welcome-dialog> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    28 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ucs-welcome-dialog spk2="" next-gen="" luminous="" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy13ZWxjb21lLWRpYWxvZyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDIyXQ=="> </ucs-welcome-dialog> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2026-10-05 20:56:27,692 | INFO | Retry 2/3 for Cloud Cost Optimization Intelligence Agent
+2026-10-05 20:56:48,969 | ERROR | Attempt 2 failed to process Cloud Cost Optimization Intelligence Agent: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("New agent", exact=True)
+    - locator resolved to <button aria-haspopup="menu" aria-expanded="false" aria-label="New agent" id="create-menu-anchor" class="list-item create-agent-button-top" aria-describedby="create-menu-anchor-tooltip">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-welcome-dialog spk2="" next-gen="" luminous="" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy13ZWxjb21lLWRpYWxvZyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDIyXQ=="> </ucs-welcome-dialog> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-welcome-dialog spk2="" next-gen="" luminous="" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy13ZWxjb21lLWRpYWxvZyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDIyXQ=="> </ucs-welcome-dialog> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    27 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ucs-welcome-dialog spk2="" next-gen="" luminous="" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy13ZWxjb21lLWRpYWxvZyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDIyXQ=="> </ucs-welcome-dialog> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 154, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 34, in open_agent_builder
+    ).click()
+      ^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("New agent", exact=True)
+    - locator resolved to <button aria-haspopup="menu" aria-expanded="false" aria-label="New agent" id="create-menu-anchor" class="list-item create-agent-button-top" aria-describedby="create-menu-anchor-tooltip">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-welcome-dialog spk2="" next-gen="" luminous="" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy13ZWxjb21lLWRpYWxvZyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDIyXQ=="> </ucs-welcome-dialog> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-welcome-dialog spk2="" next-gen="" luminous="" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy13ZWxjb21lLWRpYWxvZyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDIyXQ=="> </ucs-welcome-dialog> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    27 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ucs-welcome-dialog spk2="" next-gen="" luminous="" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy13ZWxjb21lLWRpYWxvZyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDIyXQ=="> </ucs-welcome-dialog> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+
+2026-10-05 20:56:49,216 | INFO | Retry 3/3 for Cloud Cost Optimization Intelligence Agent
+2026-10-05 20:57:08,889 | ERROR | Attempt 3 failed to process Cloud Cost Optimization Intelligence Agent: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("New agent", exact=True)
+    - locator resolved to <button aria-haspopup="menu" aria-expanded="false" aria-label="New agent" id="create-menu-anchor" class="list-item create-agent-button-top" aria-describedby="create-menu-anchor-tooltip">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-welcome-dialog spk2="" next-gen="" luminous="" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy13ZWxjb21lLWRpYWxvZyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDIyXQ=="> </ucs-welcome-dialog> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-welcome-dialog spk2="" next-gen="" luminous="" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy13ZWxjb21lLWRpYWxvZyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDIyXQ=="> </ucs-welcome-dialog> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    28 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ucs-welcome-dialog spk2="" next-gen="" luminous="" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy13ZWxjb21lLWRpYWxvZyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDIyXQ=="> </ucs-welcome-dialog> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 154, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 34, in open_agent_builder
+    ).click()
+      ^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("New agent", exact=True)
+    - locator resolved to <button aria-haspopup="menu" aria-expanded="false" aria-label="New agent" id="create-menu-anchor" class="list-item create-agent-button-top" aria-describedby="create-menu-anchor-tooltip">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-welcome-dialog spk2="" next-gen="" luminous="" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy13ZWxjb21lLWRpYWxvZyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDIyXQ=="> </ucs-welcome-dialog> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-welcome-dialog spk2="" next-gen="" luminous="" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy13ZWxjb21lLWRpYWxvZyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDIyXQ=="> </ucs-welcome-dialog> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    28 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ucs-welcome-dialog spk2="" next-gen="" luminous="" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy13ZWxjb21lLWRpYWxvZyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDIyXQ=="> </ucs-welcome-dialog> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2026-10-05 20:57:12,048 | INFO | Saved output/migration_results.csv
+2026-10-05 20:57:12,091 | INFO | Automation finished.
+2026-10-05 20:57:44,486 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 20:57:44,486 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 20:57:44,493 | INFO | Total CSV records: 6
+2026-10-05 20:57:44,493 | INFO | Valid records: 6
+2026-10-05 20:57:44,493 | INFO | Invalid records: 0
+2026-10-05 20:57:44,493 | INFO | Records selected for processing: 1
+2026-10-05 20:57:45,336 | INFO | Connected to existing Chrome session.
+2026-10-05 20:57:48,749 | INFO | Gemini Enterprise opened.
+2026-10-05 20:57:48,750 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-05 20:58:15,403 | ERROR | Verification failed: Cloud Cost Optimization Intelligence Agent
+2026-10-05 20:58:15,790 | INFO | Retry 2/3 for Cloud Cost Optimization Intelligence Agent
+2026-10-05 20:58:41,085 | ERROR | Verification failed: Cloud Cost Optimization Intelligence Agent
+2026-10-05 20:58:41,426 | INFO | Retry 3/3 for Cloud Cost Optimization Intelligence Agent
+2026-10-05 20:59:03,756 | ERROR | Attempt 3 failed to process Cloud Cost Optimization Intelligence Agent: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_role("menuitem", name="Chat agent")
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 154, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 51, in open_agent_builder
+    ).click()
+      ^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_role("menuitem", name="Chat agent")
+
+2026-10-05 20:59:08,066 | INFO | Saved output/migration_results.csv
+2026-10-05 20:59:08,195 | INFO | Automation finished.
+2026-10-05 20:59:30,956 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 20:59:30,956 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 20:59:30,964 | INFO | Total CSV records: 6
+2026-10-05 20:59:30,964 | INFO | Valid records: 6
+2026-10-05 20:59:30,964 | INFO | Invalid records: 0
+2026-10-05 20:59:30,964 | INFO | Records selected for processing: 1
+2026-10-05 20:59:32,180 | INFO | Connected to existing Chrome session.
+2026-10-05 20:59:36,316 | INFO | Gemini Enterprise opened.
+2026-10-05 20:59:36,328 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-05 21:00:02,489 | INFO | SUCCESS: Cloud Cost Optimization Intelligence Agent
+2026-10-05 21:00:06,179 | INFO | Saved output/migration_results.csv
+2026-10-05 21:00:06,265 | INFO | Automation finished.
+2026-10-05 21:04:56,639 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 21:04:56,640 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 21:04:56,646 | INFO | Total CSV records: 6
+2026-10-05 21:04:56,646 | INFO | Valid records: 6
+2026-10-05 21:04:56,646 | INFO | Invalid records: 0
+2026-10-05 21:04:56,646 | INFO | Records selected for processing: 1
+2026-10-05 21:04:57,254 | INFO | Automation finished.
+2026-10-05 21:07:31,308 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 21:07:31,308 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 21:07:31,315 | INFO | Total CSV records: 6
+2026-10-05 21:07:31,315 | INFO | Valid records: 6
+2026-10-05 21:07:31,315 | INFO | Invalid records: 0
+2026-10-05 21:07:31,316 | INFO | Records selected for processing: 1
+2026-10-05 21:07:32,215 | INFO | Connected to existing Chrome session.
+2026-10-05 21:07:38,162 | INFO | Gemini Enterprise opened.
+2026-10-05 21:07:38,163 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-05 21:08:01,288 | INFO | SUCCESS: Cloud Cost Optimization Intelligence Agent
+2026-10-05 21:08:05,485 | INFO | Saved output/migration_results.csv
+2026-10-05 21:08:05,528 | INFO | Automation finished.
+2026-10-05 21:22:46,092 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 21:22:46,092 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 21:22:46,099 | INFO | Total CSV records: 6
+2026-10-05 21:22:46,099 | INFO | Valid records: 6
+2026-10-05 21:22:46,099 | INFO | Invalid records: 0
+2026-10-05 21:22:46,099 | INFO | Records selected for processing: 1
+2026-10-05 21:22:47,089 | INFO | Connected to existing Chrome session.
+2026-10-05 21:22:54,724 | INFO | Gemini Enterprise opened.
+2026-10-05 21:22:54,734 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-05 21:23:19,939 | INFO | SUCCESS: Cloud Cost Optimization Intelligence Agent
+2026-10-05 21:23:24,196 | INFO | Saved output/migration_results.csv
+2026-10-05 21:23:24,237 | INFO | Automation finished.
+2026-10-05 21:30:20,008 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 21:30:20,008 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 21:30:20,016 | INFO | Total CSV records: 6
+2026-10-05 21:30:20,016 | INFO | Valid records: 6
+2026-10-05 21:30:20,016 | INFO | Invalid records: 0
+2026-10-05 21:30:20,016 | INFO | Records selected for processing: 6
+2026-10-05 21:30:21,218 | INFO | Connected to existing Chrome session.
+2026-10-05 21:30:24,850 | INFO | Gemini Enterprise opened.
+2026-10-05 21:30:24,852 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-05 21:30:47,466 | INFO | SUCCESS: Cloud Cost Optimization Intelligence Agent
+2026-10-05 21:30:51,340 | INFO | Processing agent: Data Quality & Governance Intelligence Agent
+2026-10-05 21:31:10,555 | INFO | SUCCESS: Data Quality & Governance Intelligence Agent
+2026-10-05 21:31:14,092 | INFO | Processing agent: Beginner Code Explainer
+2026-10-05 21:31:30,775 | INFO | SUCCESS: Beginner Code Explainer
+2026-10-05 21:31:33,132 | INFO | Processing agent: Project Risk Intelligence Advisor
+2026-10-05 21:31:52,629 | INFO | SUCCESS: Project Risk Intelligence Advisor
+2026-10-05 21:31:55,596 | INFO | Processing agent: Meeting Notes & Action Item Summarizer
+2026-10-05 21:32:10,769 | INFO | SUCCESS: Meeting Notes & Action Item Summarizer
+2026-10-05 21:32:13,090 | INFO | Processing agent: Professional Email Writer & Polisher
+2026-10-05 21:32:25,919 | INFO | SUCCESS: Professional Email Writer & Polisher
+2026-10-05 21:32:28,451 | INFO | Saved output/migration_results.csv
+2026-10-05 21:32:28,541 | INFO | Automation finished.
+2026-10-05 21:58:17,789 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 21:58:17,789 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 21:58:17,797 | INFO | Total CSV records: 6
+2026-10-05 21:58:17,797 | INFO | Valid records: 6
+2026-10-05 21:58:17,797 | INFO | Invalid records: 0
+2026-10-05 21:58:17,797 | INFO | Records selected for processing: 1
+2026-10-05 21:58:19,140 | INFO | Connected to existing Chrome session.
+2026-10-05 21:58:25,104 | INFO | Gemini Enterprise opened.
+2026-10-05 21:58:25,107 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-05 21:59:23,031 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Locator.wait_for: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_text("Agent Created Successfully") to be visible
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 135, in wait_for_creation_success
+    success_text.wait_for(state="visible", timeout=30000)
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 20696, in wait_for
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 752, in wait_for
+    await self._frame.wait_for_selector(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 395, in wait_for_selector
+    await self._channel.send(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.wait_for: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_text("Agent Created Successfully") to be visible
+
+2026-10-05 21:59:32,201 | INFO | Saved output/migration_results.csv
+2026-10-05 21:59:32,870 | INFO | Automation finished.
+2026-10-05 22:02:34,797 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 22:02:34,797 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 22:02:34,807 | INFO | Total CSV records: 6
+2026-10-05 22:02:34,807 | INFO | Valid records: 6
+2026-10-05 22:02:34,807 | INFO | Invalid records: 0
+2026-10-05 22:02:34,807 | INFO | Records selected for processing: 1
+2026-10-05 22:02:35,499 | INFO | Automation finished.
+2026-10-05 22:05:17,765 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 22:05:17,766 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 22:05:17,774 | INFO | Total CSV records: 6
+2026-10-05 22:05:17,774 | INFO | Valid records: 6
+2026-10-05 22:05:17,774 | INFO | Invalid records: 0
+2026-10-05 22:05:17,774 | INFO | Records selected for processing: 1
+2026-10-05 22:05:18,512 | INFO | Connected to existing Chrome session.
+2026-10-05 22:05:23,991 | INFO | Gemini Enterprise opened.
+2026-10-05 22:05:23,994 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-05 22:06:23,966 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Timeout 30000ms exceeded.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 182, in main
+    creator.click_chat_with_agent()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 147, in click_chat_with_agent
+    self.page.wait_for_load_state("networkidle")
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 10008, in wait_for_load_state
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_page.py", line 582, in wait_for_load_state
+    return await self._main_frame.wait_for_load_state(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 299, in wait_for_load_state
+    return await self._wait_for_load_state_impl(state, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 327, in _wait_for_load_state_impl
+    await waiter.result()
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+2026-10-05 22:06:28,123 | INFO | Saved output/migration_results.csv
+2026-10-05 22:06:28,199 | INFO | Automation finished.
+2026-10-05 22:07:19,480 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 22:07:19,481 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 22:07:19,487 | INFO | Total CSV records: 6
+2026-10-05 22:07:19,487 | INFO | Valid records: 6
+2026-10-05 22:07:19,487 | INFO | Invalid records: 0
+2026-10-05 22:07:19,487 | INFO | Records selected for processing: 1
+2026-10-05 22:07:20,169 | INFO | Connected to existing Chrome session.
+2026-10-05 22:07:23,377 | INFO | Gemini Enterprise opened.
+2026-10-05 22:07:23,412 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-05 22:08:14,732 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Locator.wait_for: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_text("Agent Created Successfully") to be visible
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 135, in wait_for_creation_success
+    success_text.wait_for(state="visible", timeout=30000)
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 20696, in wait_for
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 752, in wait_for
+    await self._frame.wait_for_selector(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 395, in wait_for_selector
+    await self._channel.send(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.wait_for: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_text("Agent Created Successfully") to be visible
+
+2026-10-05 22:08:18,659 | INFO | Saved output/migration_results.csv
+2026-10-05 22:08:18,708 | INFO | Automation finished.
+2026-10-05 22:10:37,701 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 22:10:37,701 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 22:10:37,708 | INFO | Total CSV records: 6
+2026-10-05 22:10:37,708 | INFO | Valid records: 6
+2026-10-05 22:10:37,709 | INFO | Invalid records: 0
+2026-10-05 22:10:37,709 | INFO | Records selected for processing: 1
+2026-10-05 22:10:38,420 | INFO | Connected to existing Chrome session.
+2026-10-05 22:10:41,670 | INFO | Gemini Enterprise opened.
+2026-10-05 22:10:41,671 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-05 22:11:32,620 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Locator.wait_for: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_text("Your agent is now created") to be visible
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 138, in wait_for_creation_success
+    fallback_text.wait_for(state="visible", timeout=30000)
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 20696, in wait_for
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 752, in wait_for
+    await self._frame.wait_for_selector(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 395, in wait_for_selector
+    await self._channel.send(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.wait_for: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_text("Your agent is now created") to be visible
+
+2026-10-05 22:11:36,287 | INFO | Saved output/migration_results.csv
+2026-10-05 22:11:36,322 | INFO | Automation finished.
+2026-10-05 22:15:42,302 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 22:15:42,302 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 22:15:42,308 | INFO | Total CSV records: 6
+2026-10-05 22:15:42,308 | INFO | Valid records: 6
+2026-10-05 22:15:42,308 | INFO | Invalid records: 0
+2026-10-05 22:15:42,308 | INFO | Records selected for processing: 1
+2026-10-05 22:15:43,380 | INFO | Connected to existing Chrome session.
+2026-10-05 22:15:46,780 | INFO | Gemini Enterprise opened.
+2026-10-05 22:15:46,781 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-05 22:16:04,969 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_role("menuitem", name="Chat agent")
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 153, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 51, in open_agent_builder
+    ).click()
+      ^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_role("menuitem", name="Chat agent")
+
+2026-10-05 22:16:07,806 | INFO | Saved output/migration_results.csv
+2026-10-05 22:16:07,841 | INFO | Automation finished.
+2026-10-05 22:17:34,169 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 22:17:34,170 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 22:17:34,176 | INFO | Total CSV records: 6
+2026-10-05 22:17:34,176 | INFO | Valid records: 6
+2026-10-05 22:17:34,176 | INFO | Invalid records: 0
+2026-10-05 22:17:34,176 | INFO | Records selected for processing: 1
+2026-10-05 22:17:35,107 | INFO | Connected to existing Chrome session.
+2026-10-05 22:17:38,687 | INFO | Gemini Enterprise opened.
+2026-10-05 22:17:38,688 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-05 22:18:33,448 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Locator.wait_for: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_role("dialog").first to be visible
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 135, in wait_for_creation_success
+    dialog.wait_for(state="visible", timeout=30000)
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 20696, in wait_for
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 752, in wait_for
+    await self._frame.wait_for_selector(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 395, in wait_for_selector
+    await self._channel.send(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.wait_for: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_role("dialog").first to be visible
+
+2026-10-05 22:18:37,102 | INFO | Saved output/migration_results.csv
+2026-10-05 22:18:37,612 | INFO | Automation finished.
+2026-10-05 22:27:09,176 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 22:27:09,176 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 22:27:09,182 | INFO | Total CSV records: 6
+2026-10-05 22:27:09,182 | INFO | Valid records: 6
+2026-10-05 22:27:09,182 | INFO | Invalid records: 0
+2026-10-05 22:27:09,182 | INFO | Records selected for processing: 1
+2026-10-05 22:27:10,224 | INFO | Connected to existing Chrome session.
+2026-10-05 22:27:14,207 | INFO | Gemini Enterprise opened.
+2026-10-05 22:27:14,207 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-05 22:27:39,830 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: HALTED FOR DOM INSPECTION: Please check artifacts/dom_after_create.html and the debug screenshot!
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 149, in wait_for_creation_success
+    raise Exception("HALTED FOR DOM INSPECTION: Please check artifacts/dom_after_create.html and the debug screenshot!")
+Exception: HALTED FOR DOM INSPECTION: Please check artifacts/dom_after_create.html and the debug screenshot!
+2026-10-05 22:27:43,175 | INFO | Saved output/migration_results.csv
+2026-10-05 22:27:43,212 | INFO | Automation finished.
+2026-10-05 22:38:28,672 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 22:38:28,672 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 22:38:28,679 | INFO | Total CSV records: 6
+2026-10-05 22:38:28,679 | INFO | Valid records: 6
+2026-10-05 22:38:28,679 | INFO | Invalid records: 0
+2026-10-05 22:38:28,679 | INFO | Records selected for processing: 1
+2026-10-05 22:38:29,645 | INFO | Connected to existing Chrome session.
+2026-10-05 22:38:34,246 | INFO | Gemini Enterprise opened.
+2026-10-05 22:38:34,250 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-05 22:39:00,693 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: HALTED FOR DOM INSPECTION: Please check artifacts/dom_after_create.html and the debug screenshot!
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 149, in wait_for_creation_success
+    raise Exception("HALTED FOR DOM INSPECTION: Please check artifacts/dom_after_create.html and the debug screenshot!")
+Exception: HALTED FOR DOM INSPECTION: Please check artifacts/dom_after_create.html and the debug screenshot!
+2026-10-05 22:39:03,957 | INFO | Saved output/migration_results.csv
+2026-10-05 22:39:04,023 | INFO | Automation finished.
+2026-10-05 22:45:46,434 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 22:45:46,434 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 22:45:46,440 | INFO | Total CSV records: 6
+2026-10-05 22:45:46,440 | INFO | Valid records: 6
+2026-10-05 22:45:46,440 | INFO | Invalid records: 0
+2026-10-05 22:45:46,441 | INFO | Records selected for processing: 1
+2026-10-05 22:45:47,125 | INFO | Connected to existing Chrome session.
+2026-10-05 22:45:50,799 | INFO | Gemini Enterprise opened.
+2026-10-05 22:45:50,799 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-05 22:46:21,036 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 143, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+Exception: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+2026-10-05 22:46:25,405 | INFO | Saved output/migration_results.csv
+2026-10-05 22:46:25,436 | INFO | Automation finished.
+2026-10-05 22:53:45,152 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 22:53:45,152 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 22:53:45,159 | INFO | Total CSV records: 6
+2026-10-05 22:53:45,160 | INFO | Valid records: 6
+2026-10-05 22:53:45,160 | INFO | Invalid records: 0
+2026-10-05 22:53:45,160 | INFO | Records selected for processing: 1
+2026-10-05 22:53:46,272 | INFO | Connected to existing Chrome session.
+2026-10-05 22:53:50,136 | INFO | Gemini Enterprise opened.
+2026-10-05 22:53:50,143 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-05 22:54:21,749 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 163, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+Exception: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+2026-10-05 22:54:26,026 | INFO | Saved output/migration_results.csv
+2026-10-05 22:54:26,066 | INFO | Automation finished.
+2026-10-05 23:02:31,077 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 23:02:31,078 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 23:02:31,111 | INFO | Total CSV records: 6
+2026-10-05 23:02:31,112 | INFO | Valid records: 6
+2026-10-05 23:02:31,112 | INFO | Invalid records: 0
+2026-10-05 23:02:31,112 | INFO | Records selected for processing: 1
+2026-10-05 23:02:32,168 | INFO | Connected to existing Chrome session.
+2026-10-05 23:02:35,610 | INFO | Gemini Enterprise opened.
+2026-10-05 23:02:35,613 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-05 23:03:04,872 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 163, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+Exception: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+2026-10-05 23:03:08,383 | INFO | Saved output/migration_results.csv
+2026-10-05 23:03:08,422 | INFO | Automation finished.
+2026-10-05 23:32:08,782 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-05 23:32:08,782 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-05 23:32:08,809 | INFO | Total CSV records: 6
+2026-10-05 23:32:08,809 | INFO | Valid records: 6
+2026-10-05 23:32:08,809 | INFO | Invalid records: 0
+2026-10-05 23:32:08,809 | INFO | Records selected for processing: 1
+2026-10-05 23:32:10,578 | INFO | Connected to existing Chrome session.
+2026-10-05 23:32:15,006 | INFO | Gemini Enterprise opened.
+2026-10-05 23:32:15,009 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-05 23:32:58,108 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_text("WidgetService.WidgetDeployLowCodeAgent")
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 177, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/.pyenv/versions/3.11.13/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 20442, in text_content
+    self._sync(self._impl_obj.text_content(timeout=to_milliseconds(timeout)))
+  File "/Users/rajashrikongare/.pyenv/versions/3.11.13/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/.pyenv/versions/3.11.13/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 688, in text_content
+    return await self._frame.text_content(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/.pyenv/versions/3.11.13/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 737, in text_content
+    return await self._channel.send(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/.pyenv/versions/3.11.13/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/.pyenv/versions/3.11.13/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_text("WidgetService.WidgetDeployLowCodeAgent")
+
+2026-10-05 23:33:03,017 | INFO | Saved output/migration_results.csv
+2026-10-05 23:33:03,089 | INFO | Automation finished.
+2026-10-06 10:48:21,220 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 10:48:21,221 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 10:48:21,245 | INFO | Total CSV records: 6
+2026-10-06 10:48:21,245 | INFO | Valid records: 6
+2026-10-06 10:48:21,245 | INFO | Invalid records: 0
+2026-10-06 10:48:21,245 | INFO | Records selected for processing: 1
+2026-10-06 10:48:22,099 | INFO | Connected to existing Chrome session.
+2026-10-06 10:48:26,734 | INFO | Gemini Enterprise opened.
+2026-10-06 10:48:26,735 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 10:48:54,585 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 183, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+Exception: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+2026-10-06 10:48:57,916 | INFO | Saved output/migration_results.csv
+2026-10-06 10:48:58,010 | INFO | Automation finished.
+2026-10-06 10:50:48,654 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 10:50:48,654 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 10:50:48,678 | INFO | Total CSV records: 6
+2026-10-06 10:50:48,678 | INFO | Valid records: 6
+2026-10-06 10:50:48,678 | INFO | Invalid records: 0
+2026-10-06 10:50:48,678 | INFO | Records selected for processing: 1
+2026-10-06 10:50:50,234 | INFO | Connected to existing Chrome session.
+2026-10-06 10:50:53,939 | INFO | Gemini Enterprise opened.
+2026-10-06 10:50:53,945 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 10:51:22,418 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 181, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+Exception: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+2026-10-06 10:51:26,293 | INFO | Saved output/migration_results.csv
+2026-10-06 10:51:26,339 | INFO | Automation finished.
+2026-10-06 11:57:59,906 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 11:57:59,907 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 11:57:59,934 | INFO | Total CSV records: 6
+2026-10-06 11:57:59,935 | INFO | Valid records: 6
+2026-10-06 11:57:59,935 | INFO | Invalid records: 0
+2026-10-06 11:57:59,935 | INFO | Records selected for processing: 1
+2026-10-06 11:58:02,637 | INFO | Connected to existing Chrome session.
+2026-10-06 11:58:08,497 | INFO | Gemini Enterprise opened.
+2026-10-06 11:58:08,498 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 11:58:32,620 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: HALTED FOR UI INSPECTION
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 160, in main
+    created = creator.create_agent()
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 172, in create_agent
+    raise Exception("HALTED FOR UI INSPECTION")
+Exception: HALTED FOR UI INSPECTION
+2026-10-06 11:58:36,919 | INFO | Saved output/migration_results.csv
+2026-10-06 11:58:37,448 | INFO | Automation finished.
+2026-10-06 12:00:09,304 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 12:00:09,304 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 12:00:09,330 | INFO | Total CSV records: 6
+2026-10-06 12:00:09,330 | INFO | Valid records: 6
+2026-10-06 12:00:09,330 | INFO | Invalid records: 0
+2026-10-06 12:00:09,330 | INFO | Records selected for processing: 1
+2026-10-06 12:00:10,983 | INFO | Connected to existing Chrome session.
+2026-10-06 12:00:14,236 | INFO | Gemini Enterprise opened.
+2026-10-06 12:00:14,237 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 12:00:35,613 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 187, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+Exception: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+2026-10-06 12:00:38,854 | INFO | Saved output/migration_results.csv
+2026-10-06 12:00:39,133 | INFO | Automation finished.
+2026-10-06 12:01:35,655 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 12:01:35,656 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 12:01:35,677 | INFO | Total CSV records: 6
+2026-10-06 12:01:35,677 | INFO | Valid records: 6
+2026-10-06 12:01:35,677 | INFO | Invalid records: 0
+2026-10-06 12:01:35,677 | INFO | Records selected for processing: 1
+2026-10-06 12:01:37,155 | INFO | Connected to existing Chrome session.
+2026-10-06 12:01:40,719 | INFO | Gemini Enterprise opened.
+2026-10-06 12:01:40,721 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 12:01:58,966 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 191, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+Exception: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+2026-10-06 12:02:02,145 | INFO | Saved output/migration_results.csv
+2026-10-06 12:02:02,353 | INFO | Automation finished.
+2026-10-06 12:02:33,236 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 12:02:33,237 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 12:02:33,259 | INFO | Total CSV records: 6
+2026-10-06 12:02:33,259 | INFO | Valid records: 6
+2026-10-06 12:02:33,259 | INFO | Invalid records: 0
+2026-10-06 12:02:33,259 | INFO | Records selected for processing: 1
+2026-10-06 12:02:34,540 | INFO | Connected to existing Chrome session.
+2026-10-06 12:02:39,463 | INFO | Gemini Enterprise opened.
+2026-10-06 12:02:39,464 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 12:02:58,654 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 195, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+Exception: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+2026-10-06 12:03:01,728 | INFO | Saved output/migration_results.csv
+2026-10-06 12:03:01,746 | INFO | Automation finished.
+2026-10-06 12:05:20,873 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 12:05:20,873 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 12:05:20,897 | INFO | Total CSV records: 6
+2026-10-06 12:05:20,897 | INFO | Valid records: 6
+2026-10-06 12:05:20,897 | INFO | Invalid records: 0
+2026-10-06 12:05:20,897 | INFO | Records selected for processing: 1
+2026-10-06 12:05:22,158 | INFO | Connected to existing Chrome session.
+2026-10-06 12:05:27,916 | INFO | Gemini Enterprise opened.
+2026-10-06 12:05:27,918 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 12:05:46,736 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 189, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+Exception: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+2026-10-06 12:05:50,057 | INFO | Saved output/migration_results.csv
+2026-10-06 12:05:50,133 | INFO | Automation finished.
+2026-10-06 12:06:24,526 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 12:06:24,527 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 12:06:24,550 | INFO | Total CSV records: 6
+2026-10-06 12:06:24,550 | INFO | Valid records: 6
+2026-10-06 12:06:24,550 | INFO | Invalid records: 0
+2026-10-06 12:06:24,551 | INFO | Records selected for processing: 1
+2026-10-06 12:06:25,981 | INFO | Connected to existing Chrome session.
+2026-10-06 12:06:29,367 | INFO | Gemini Enterprise opened.
+2026-10-06 12:06:29,368 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 12:06:49,383 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 188, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+Exception: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+2026-10-06 12:06:52,579 | INFO | Saved output/migration_results.csv
+2026-10-06 12:06:52,725 | INFO | Automation finished.
+2026-10-06 12:08:11,896 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 12:08:11,897 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 12:08:11,920 | INFO | Total CSV records: 6
+2026-10-06 12:08:11,920 | INFO | Valid records: 6
+2026-10-06 12:08:11,920 | INFO | Invalid records: 0
+2026-10-06 12:08:11,920 | INFO | Records selected for processing: 1
+2026-10-06 12:08:13,447 | INFO | Connected to existing Chrome session.
+2026-10-06 12:08:16,951 | INFO | Gemini Enterprise opened.
+2026-10-06 12:08:16,953 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 12:08:40,622 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 197, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+Exception: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+2026-10-06 12:08:44,898 | INFO | Saved output/migration_results.csv
+2026-10-06 12:08:44,921 | INFO | Automation finished.
+2026-10-06 12:09:30,996 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 12:09:30,996 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 12:09:31,021 | INFO | Total CSV records: 6
+2026-10-06 12:09:31,021 | INFO | Valid records: 6
+2026-10-06 12:09:31,021 | INFO | Invalid records: 0
+2026-10-06 12:09:31,021 | INFO | Records selected for processing: 1
+2026-10-06 12:09:32,406 | INFO | Connected to existing Chrome session.
+2026-10-06 12:09:35,673 | INFO | Gemini Enterprise opened.
+2026-10-06 12:09:35,673 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 12:09:58,907 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 242, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+Exception: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+2026-10-06 12:10:01,828 | INFO | Saved output/migration_results.csv
+2026-10-06 12:10:02,014 | INFO | Automation finished.
+2026-10-06 12:11:30,607 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 12:11:30,607 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 12:11:30,632 | INFO | Total CSV records: 6
+2026-10-06 12:11:30,632 | INFO | Valid records: 6
+2026-10-06 12:11:30,632 | INFO | Invalid records: 0
+2026-10-06 12:11:30,632 | INFO | Records selected for processing: 1
+2026-10-06 12:11:32,112 | INFO | Connected to existing Chrome session.
+2026-10-06 12:11:35,824 | INFO | Gemini Enterprise opened.
+2026-10-06 12:11:35,826 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 12:12:00,268 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 230, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+Exception: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+2026-10-06 12:12:03,742 | INFO | Saved output/migration_results.csv
+2026-10-06 12:12:04,028 | INFO | Automation finished.
+2026-10-06 14:39:01,205 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 14:39:01,205 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 14:39:01,215 | INFO | Total CSV records: 6
+2026-10-06 14:39:01,215 | INFO | Valid records: 6
+2026-10-06 14:39:01,215 | INFO | Invalid records: 0
+2026-10-06 14:39:01,215 | INFO | Records selected for processing: 1
+2026-10-06 14:39:01,727 | INFO | Automation finished.
+2026-10-06 14:40:46,691 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 14:40:46,692 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 14:40:46,700 | INFO | Total CSV records: 6
+2026-10-06 14:40:46,700 | INFO | Valid records: 6
+2026-10-06 14:40:46,700 | INFO | Invalid records: 0
+2026-10-06 14:40:46,700 | INFO | Records selected for processing: 1
+2026-10-06 14:40:47,221 | INFO | Automation finished.
+2026-10-06 14:46:06,277 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 14:46:06,278 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 14:46:06,284 | INFO | Total CSV records: 6
+2026-10-06 14:46:06,285 | INFO | Valid records: 6
+2026-10-06 14:46:06,285 | INFO | Invalid records: 0
+2026-10-06 14:46:06,285 | INFO | Records selected for processing: 1
+2026-10-06 14:46:06,976 | INFO | Connected to existing Chrome session.
+2026-10-06 14:46:11,532 | INFO | Gemini Enterprise opened.
+2026-10-06 14:46:11,533 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 14:46:43,437 | INFO | SUCCESS: Cloud Cost Optimization Intelligence Agent
+2026-10-06 14:46:43,439 | INFO | Saved output/migration_results.csv
+2026-10-06 14:46:43,462 | INFO | Automation finished.
+2026-10-06 14:50:19,976 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 14:50:19,976 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 14:50:19,982 | INFO | Total CSV records: 6
+2026-10-06 14:50:19,982 | INFO | Valid records: 6
+2026-10-06 14:50:19,982 | INFO | Invalid records: 0
+2026-10-06 14:50:19,982 | INFO | Records selected for processing: 1
+2026-10-06 14:50:20,616 | INFO | Connected to existing Chrome session.
+2026-10-06 14:50:25,596 | INFO | Gemini Enterprise opened.
+2026-10-06 14:50:25,597 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 14:50:54,373 | INFO | SUCCESS: Cloud Cost Optimization Intelligence Agent
+2026-10-06 14:50:54,375 | INFO | Saved output/migration_results.csv
+2026-10-06 14:50:54,396 | INFO | Automation finished.
+2026-10-06 14:51:24,365 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 14:51:24,365 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 14:51:24,370 | INFO | Total CSV records: 6
+2026-10-06 14:51:24,371 | INFO | Valid records: 6
+2026-10-06 14:51:24,371 | INFO | Invalid records: 0
+2026-10-06 14:51:24,371 | INFO | Records selected for processing: 6
+2026-10-06 14:51:24,949 | INFO | Connected to existing Chrome session.
+2026-10-06 14:51:28,958 | INFO | Gemini Enterprise opened.
+2026-10-06 14:51:28,958 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 14:51:58,011 | INFO | SUCCESS: Cloud Cost Optimization Intelligence Agent
+2026-10-06 14:51:58,011 | INFO | Processing agent: Data Quality & Governance Intelligence Agent
+2026-10-06 14:52:15,063 | ERROR | Failed to process Data Quality & Governance Intelligence Agent: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("New agent", exact=True)
+    - locator resolved to <button aria-haspopup="menu" aria-expanded="false" aria-label="New agent" id="create-menu-anchor" class="list-item create-agent-button-top" aria-describedby="create-menu-anchor-tooltip">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    28 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 153, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 44, in open_agent_builder
+    ).click()
+      ^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("New agent", exact=True)
+    - locator resolved to <button aria-haspopup="menu" aria-expanded="false" aria-label="New agent" id="create-menu-anchor" class="list-item create-agent-button-top" aria-describedby="create-menu-anchor-tooltip">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    28 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2026-10-06 14:52:22,484 | INFO | Processing agent: Beginner Code Explainer
+2026-10-06 14:52:50,365 | INFO | SUCCESS: Beginner Code Explainer
+2026-10-06 14:52:50,366 | INFO | Processing agent: Project Risk Intelligence Advisor
+2026-10-06 14:53:07,422 | ERROR | Failed to process Project Risk Intelligence Advisor: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("New agent", exact=True)
+    - locator resolved to <button aria-haspopup="menu" aria-expanded="false" aria-label="New agent" id="create-menu-anchor" class="list-item create-agent-button-top" aria-describedby="create-menu-anchor-tooltip">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    28 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 153, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 44, in open_agent_builder
+    ).click()
+      ^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("New agent", exact=True)
+    - locator resolved to <button aria-haspopup="menu" aria-expanded="false" aria-label="New agent" id="create-menu-anchor" class="list-item create-agent-button-top" aria-describedby="create-menu-anchor-tooltip">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    28 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2026-10-06 14:53:11,575 | INFO | Processing agent: Meeting Notes & Action Item Summarizer
+2026-10-06 14:53:39,286 | INFO | SUCCESS: Meeting Notes & Action Item Summarizer
+2026-10-06 14:53:39,287 | INFO | Processing agent: Professional Email Writer & Polisher
+2026-10-06 14:53:56,343 | ERROR | Failed to process Professional Email Writer & Polisher: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("New agent", exact=True)
+    - locator resolved to <button aria-haspopup="menu" aria-expanded="false" aria-label="New agent" id="create-menu-anchor" class="list-item create-agent-button-top" aria-describedby="create-menu-anchor-tooltip">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    27 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 153, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 44, in open_agent_builder
+    ).click()
+      ^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("New agent", exact=True)
+    - locator resolved to <button aria-haspopup="menu" aria-expanded="false" aria-label="New agent" id="create-menu-anchor" class="list-item create-agent-button-top" aria-describedby="create-menu-anchor-tooltip">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    27 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2026-10-06 14:54:00,315 | INFO | Saved output/migration_results.csv
+2026-10-06 14:54:00,380 | INFO | Automation finished.
+2026-10-06 14:59:53,861 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 14:59:53,861 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 14:59:53,869 | INFO | Total CSV records: 6
+2026-10-06 14:59:53,869 | INFO | Valid records: 6
+2026-10-06 14:59:53,869 | INFO | Invalid records: 0
+2026-10-06 14:59:53,869 | INFO | Records selected for processing: 6
+2026-10-06 14:59:55,186 | INFO | Connected to existing Chrome session.
+2026-10-06 14:59:58,787 | INFO | Gemini Enterprise opened.
+2026-10-06 14:59:58,788 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 15:00:30,920 | INFO | SUCCESS: Cloud Cost Optimization Intelligence Agent
+2026-10-06 15:00:30,951 | INFO | Automation finished.
+2026-10-06 15:03:44,844 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 15:03:44,845 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 15:03:44,852 | INFO | Total CSV records: 6
+2026-10-06 15:03:44,852 | INFO | Valid records: 6
+2026-10-06 15:03:44,852 | INFO | Invalid records: 0
+2026-10-06 15:03:44,853 | INFO | Records selected for processing: 6
+2026-10-06 15:03:45,585 | INFO | Connected to existing Chrome session.
+2026-10-06 15:03:49,530 | INFO | Gemini Enterprise opened.
+2026-10-06 15:03:49,535 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 15:05:23,743 | INFO | SUCCESS: Cloud Cost Optimization Intelligence Agent
+2026-10-06 15:05:23,744 | INFO | Processing agent: Data Quality & Governance Intelligence Agent
+2026-10-06 15:07:11,051 | ERROR | Failed to process Data Quality & Governance Intelligence Agent: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("New agent", exact=True)
+    - locator resolved to <button aria-haspopup="menu" aria-expanded="false" aria-label="New agent" id="create-menu-anchor" class="list-item create-agent-button-top" aria-describedby="create-menu-anchor-tooltip">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    28 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 151, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 62, in open_agent_builder
+    new_agent_btn.click()
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("New agent", exact=True)
+    - locator resolved to <button aria-haspopup="menu" aria-expanded="false" aria-label="New agent" id="create-menu-anchor" class="list-item create-agent-button-top" aria-describedby="create-menu-anchor-tooltip">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    28 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2026-10-06 15:07:18,641 | INFO | Processing agent: Beginner Code Explainer
+2026-10-06 15:07:36,859 | ERROR | Failed to process Beginner Code Explainer: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_role("menuitem", name="Chat agent")
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 151, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 69, in open_agent_builder
+    ).click()
+      ^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_role("menuitem", name="Chat agent")
+
+2026-10-06 15:07:40,467 | INFO | Processing agent: Project Risk Intelligence Advisor
+2026-10-06 15:08:15,378 | INFO | SUCCESS: Project Risk Intelligence Advisor
+2026-10-06 15:08:15,379 | INFO | Processing agent: Meeting Notes & Action Item Summarizer
+2026-10-06 15:08:32,489 | ERROR | Failed to process Meeting Notes & Action Item Summarizer: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("New agent", exact=True)
+    - locator resolved to <button aria-haspopup="menu" aria-expanded="false" aria-label="New agent" id="create-menu-anchor" class="list-item create-agent-button-top" aria-describedby="create-menu-anchor-tooltip">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    28 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 151, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 62, in open_agent_builder
+    new_agent_btn.click()
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("New agent", exact=True)
+    - locator resolved to <button aria-haspopup="menu" aria-expanded="false" aria-label="New agent" id="create-menu-anchor" class="list-item create-agent-button-top" aria-describedby="create-menu-anchor-tooltip">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    28 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ucs-confirmation-dialog spk2="" open="" next-gen="" luminous="" variant="default" jslog="340197;track:impression;xFZKLc:W251bGwsInVjcy1jb25maXJtYXRpb24tZGlhbG9nIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMjJd">↵        </ucs-confirmation-dialog> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2026-10-06 15:08:36,585 | INFO | Processing agent: Professional Email Writer & Polisher
+2026-10-06 15:10:09,199 | INFO | SUCCESS: Professional Email Writer & Polisher
+2026-10-06 15:10:09,203 | INFO | Saved output/migration_results.csv
+2026-10-06 15:10:09,237 | INFO | Automation finished.
+2026-10-06 15:11:04,625 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 15:11:04,625 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 15:11:04,633 | INFO | Total CSV records: 6
+2026-10-06 15:11:04,633 | INFO | Valid records: 6
+2026-10-06 15:11:04,633 | INFO | Invalid records: 0
+2026-10-06 15:11:04,633 | INFO | Records selected for processing: 6
+2026-10-06 15:11:05,444 | INFO | Connected to existing Chrome session.
+2026-10-06 15:11:09,533 | INFO | Gemini Enterprise opened.
+2026-10-06 15:11:09,535 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 15:11:46,725 | INFO | SUCCESS: Cloud Cost Optimization Intelligence Agent
+2026-10-06 15:11:46,725 | INFO | Processing agent: Data Quality & Governance Intelligence Agent
+2026-10-06 15:12:09,912 | ERROR | Failed to process Data Quality & Governance Intelligence Agent: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_role("menuitem", name="Chat agent")
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 153, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 56, in open_agent_builder
+    ).click()
+      ^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_role("menuitem", name="Chat agent")
+
+2026-10-06 15:12:13,477 | INFO | Processing agent: Beginner Code Explainer
+2026-10-06 15:12:40,447 | ERROR | Failed to process Beginner Code Explainer: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 230, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+Exception: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+2026-10-06 15:12:43,979 | INFO | Processing agent: Project Risk Intelligence Advisor
+2026-10-06 15:13:10,885 | ERROR | Failed to process Project Risk Intelligence Advisor: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 230, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+Exception: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+2026-10-06 15:13:14,190 | INFO | Processing agent: Meeting Notes & Action Item Summarizer
+2026-10-06 15:13:37,286 | ERROR | Failed to process Meeting Notes & Action Item Summarizer: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_role("menuitem", name="Chat agent")
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 153, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 56, in open_agent_builder
+    ).click()
+      ^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_role("menuitem", name="Chat agent")
+
+2026-10-06 15:13:40,905 | INFO | Processing agent: Professional Email Writer & Polisher
+2026-10-06 15:14:09,640 | ERROR | Failed to process Professional Email Writer & Polisher: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 230, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+Exception: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+2026-10-06 15:14:13,738 | INFO | Saved output/migration_results.csv
+2026-10-06 15:14:13,813 | INFO | Automation finished.
+2026-10-06 15:14:51,549 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 15:14:51,549 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 15:14:51,556 | INFO | Total CSV records: 6
+2026-10-06 15:14:51,556 | INFO | Valid records: 6
+2026-10-06 15:14:51,556 | INFO | Invalid records: 0
+2026-10-06 15:14:51,556 | INFO | Records selected for processing: 6
+2026-10-06 15:14:52,303 | INFO | Connected to existing Chrome session.
+2026-10-06 15:14:55,763 | INFO | Gemini Enterprise opened.
+2026-10-06 15:14:55,765 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 15:15:08,564 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Locator.click: Timeout 5000ms exceeded.
+Call log:
+  - waiting for get_by_text("Agent to help interact with enterprise data.")
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 153, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 71, in open_agent_builder
+    ).click(timeout=5000)
+      ^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 5000ms exceeded.
+Call log:
+  - waiting for get_by_text("Agent to help interact with enterprise data.")
+
+2026-10-06 15:15:11,294 | INFO | Processing agent: Data Quality & Governance Intelligence Agent
+2026-10-06 15:15:23,796 | ERROR | Failed to process Data Quality & Governance Intelligence Agent: Locator.click: Timeout 5000ms exceeded.
+Call log:
+  - waiting for get_by_text("Agent to help interact with enterprise data.")
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 153, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 71, in open_agent_builder
+    ).click(timeout=5000)
+      ^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 5000ms exceeded.
+Call log:
+  - waiting for get_by_text("Agent to help interact with enterprise data.")
+
+2026-10-06 15:15:26,575 | INFO | Processing agent: Beginner Code Explainer
+2026-10-06 15:15:39,147 | ERROR | Failed to process Beginner Code Explainer: Locator.click: Timeout 5000ms exceeded.
+Call log:
+  - waiting for get_by_text("Agent to help interact with enterprise data.")
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 153, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 71, in open_agent_builder
+    ).click(timeout=5000)
+      ^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 5000ms exceeded.
+Call log:
+  - waiting for get_by_text("Agent to help interact with enterprise data.")
+
+2026-10-06 15:15:42,221 | INFO | Processing agent: Project Risk Intelligence Advisor
+2026-10-06 15:15:55,053 | ERROR | Failed to process Project Risk Intelligence Advisor: Locator.click: Timeout 5000ms exceeded.
+Call log:
+  - waiting for get_by_text("Agent to help interact with enterprise data.")
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 153, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 71, in open_agent_builder
+    ).click(timeout=5000)
+      ^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 5000ms exceeded.
+Call log:
+  - waiting for get_by_text("Agent to help interact with enterprise data.")
+
+2026-10-06 15:15:57,970 | INFO | Processing agent: Meeting Notes & Action Item Summarizer
+2026-10-06 15:16:10,606 | ERROR | Failed to process Meeting Notes & Action Item Summarizer: Locator.click: Timeout 5000ms exceeded.
+Call log:
+  - waiting for get_by_text("Agent to help interact with enterprise data.")
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 153, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 71, in open_agent_builder
+    ).click(timeout=5000)
+      ^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 5000ms exceeded.
+Call log:
+  - waiting for get_by_text("Agent to help interact with enterprise data.")
+
+2026-10-06 15:16:13,341 | INFO | Processing agent: Professional Email Writer & Polisher
+2026-10-06 15:16:26,321 | ERROR | Failed to process Professional Email Writer & Polisher: Locator.click: Timeout 5000ms exceeded.
+Call log:
+  - waiting for get_by_text("Agent to help interact with enterprise data.")
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 153, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 71, in open_agent_builder
+    ).click(timeout=5000)
+      ^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 5000ms exceeded.
+Call log:
+  - waiting for get_by_text("Agent to help interact with enterprise data.")
+
+2026-10-06 15:16:29,220 | INFO | Saved output/migration_results.csv
+2026-10-06 15:16:29,283 | INFO | Automation finished.
+2026-10-06 15:18:08,281 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 15:18:08,282 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 15:18:08,291 | INFO | Total CSV records: 6
+2026-10-06 15:18:08,291 | INFO | Valid records: 6
+2026-10-06 15:18:08,291 | INFO | Invalid records: 0
+2026-10-06 15:18:08,291 | INFO | Records selected for processing: 6
+2026-10-06 15:18:09,079 | INFO | Connected to existing Chrome session.
+2026-10-06 15:18:12,391 | INFO | Gemini Enterprise opened.
+2026-10-06 15:18:12,391 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 15:18:33,806 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Locator.wait_for: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("mat-card, ucs-canvas-node, .node-header").first to be visible
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 153, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 77, in open_agent_builder
+    node.wait_for(state="visible", timeout=10000)
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 20696, in wait_for
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 752, in wait_for
+    await self._frame.wait_for_selector(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 395, in wait_for_selector
+    await self._channel.send(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.wait_for: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("mat-card, ucs-canvas-node, .node-header").first to be visible
+
+2026-10-06 15:18:36,774 | INFO | Processing agent: Data Quality & Governance Intelligence Agent
+2026-10-06 15:18:58,476 | ERROR | Failed to process Data Quality & Governance Intelligence Agent: Locator.wait_for: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("mat-card, ucs-canvas-node, .node-header").first to be visible
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 153, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 77, in open_agent_builder
+    node.wait_for(state="visible", timeout=10000)
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 20696, in wait_for
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 752, in wait_for
+    await self._frame.wait_for_selector(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 395, in wait_for_selector
+    await self._channel.send(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.wait_for: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("mat-card, ucs-canvas-node, .node-header").first to be visible
+
+2026-10-06 15:19:02,693 | INFO | Processing agent: Beginner Code Explainer
+2026-10-06 15:19:24,409 | ERROR | Failed to process Beginner Code Explainer: Locator.wait_for: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("mat-card, ucs-canvas-node, .node-header").first to be visible
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 153, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 77, in open_agent_builder
+    node.wait_for(state="visible", timeout=10000)
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 20696, in wait_for
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 752, in wait_for
+    await self._frame.wait_for_selector(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 395, in wait_for_selector
+    await self._channel.send(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.wait_for: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("mat-card, ucs-canvas-node, .node-header").first to be visible
+
+2026-10-06 15:19:26,997 | INFO | Processing agent: Project Risk Intelligence Advisor
+2026-10-06 15:19:48,569 | ERROR | Failed to process Project Risk Intelligence Advisor: Locator.wait_for: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("mat-card, ucs-canvas-node, .node-header").first to be visible
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 153, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 77, in open_agent_builder
+    node.wait_for(state="visible", timeout=10000)
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 20696, in wait_for
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 752, in wait_for
+    await self._frame.wait_for_selector(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 395, in wait_for_selector
+    await self._channel.send(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.wait_for: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("mat-card, ucs-canvas-node, .node-header").first to be visible
+
+2026-10-06 15:19:51,525 | INFO | Processing agent: Meeting Notes & Action Item Summarizer
+2026-10-06 15:20:13,319 | ERROR | Failed to process Meeting Notes & Action Item Summarizer: Locator.wait_for: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("mat-card, ucs-canvas-node, .node-header").first to be visible
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 153, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 77, in open_agent_builder
+    node.wait_for(state="visible", timeout=10000)
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 20696, in wait_for
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 752, in wait_for
+    await self._frame.wait_for_selector(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 395, in wait_for_selector
+    await self._channel.send(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.wait_for: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("mat-card, ucs-canvas-node, .node-header").first to be visible
+
+2026-10-06 15:20:16,777 | INFO | Processing agent: Professional Email Writer & Polisher
+2026-10-06 15:20:39,562 | ERROR | Failed to process Professional Email Writer & Polisher: Locator.wait_for: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("mat-card, ucs-canvas-node, .node-header").first to be visible
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 153, in main
+    creator.open_agent_builder()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 77, in open_agent_builder
+    node.wait_for(state="visible", timeout=10000)
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 20696, in wait_for
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 752, in wait_for
+    await self._frame.wait_for_selector(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 395, in wait_for_selector
+    await self._channel.send(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.wait_for: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("mat-card, ucs-canvas-node, .node-header").first to be visible
+
+2026-10-06 15:20:43,284 | INFO | Saved output/migration_results.csv
+2026-10-06 15:20:43,397 | INFO | Automation finished.
+2026-10-06 15:21:36,369 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 15:21:36,370 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 15:21:36,378 | INFO | Total CSV records: 6
+2026-10-06 15:21:36,378 | INFO | Valid records: 6
+2026-10-06 15:21:36,379 | INFO | Invalid records: 0
+2026-10-06 15:21:36,379 | INFO | Records selected for processing: 6
+2026-10-06 15:21:37,321 | INFO | Connected to existing Chrome session.
+2026-10-06 15:21:40,790 | INFO | Gemini Enterprise opened.
+2026-10-06 15:21:40,790 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 15:22:15,332 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("Name").first
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 154, in main
+    creator.fill_agent(record)
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 138, in fill_agent
+    field.click()
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("Name").first
+
+2026-10-06 15:22:18,979 | INFO | Processing agent: Data Quality & Governance Intelligence Agent
+2026-10-06 15:22:59,525 | INFO | SUCCESS: Data Quality & Governance Intelligence Agent
+2026-10-06 15:22:59,526 | INFO | Processing agent: Beginner Code Explainer
+2026-10-06 15:23:34,549 | ERROR | Failed to process Beginner Code Explainer: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("Name").first
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 154, in main
+    creator.fill_agent(record)
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 138, in fill_agent
+    field.click()
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("Name").first
+
+2026-10-06 15:23:38,044 | INFO | Processing agent: Project Risk Intelligence Advisor
+2026-10-06 15:24:09,669 | ERROR | Failed to process Project Risk Intelligence Advisor: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 237, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+Exception: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+2026-10-06 15:24:13,918 | INFO | Processing agent: Meeting Notes & Action Item Summarizer
+2026-10-06 15:24:42,976 | ERROR | Failed to process Meeting Notes & Action Item Summarizer: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 237, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+Exception: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+2026-10-06 15:24:46,127 | INFO | Processing agent: Professional Email Writer & Polisher
+2026-10-06 15:25:16,460 | ERROR | Failed to process Professional Email Writer & Polisher: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 237, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+Exception: Backend rejected creation: The request was invalid. Details: "WidgetService.WidgetDeployLowCodeAgent" error: Request contains an invalid argument.
+2026-10-06 15:25:19,701 | INFO | Saved output/migration_results.csv
+2026-10-06 15:25:19,959 | INFO | Automation finished.
+2026-10-06 15:33:34,111 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 15:33:34,111 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 15:33:34,117 | INFO | Total CSV records: 6
+2026-10-06 15:33:34,117 | INFO | Valid records: 6
+2026-10-06 15:33:34,117 | INFO | Invalid records: 0
+2026-10-06 15:33:34,117 | INFO | Records selected for processing: 6
+2026-10-06 15:33:34,842 | INFO | Connected to existing Chrome session.
+2026-10-06 15:33:38,391 | INFO | Gemini Enterprise opened.
+2026-10-06 15:33:38,392 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 15:34:19,618 | INFO | SUCCESS: Cloud Cost Optimization Intelligence Agent
+2026-10-06 15:34:19,618 | INFO | Processing agent: Data Quality & Governance Intelligence Agent
+2026-10-06 15:34:52,172 | ERROR | Failed to process Data Quality & Governance Intelligence Agent: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("Name").first
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 154, in main
+    creator.fill_agent(record)
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 107, in fill_agent
+    field.click()
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+    self._sync(
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 594, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_label("Name").first
+
+2026-10-06 15:34:55,211 | INFO | Processing agent: Beginner Code Explainer
+2026-10-06 15:35:33,816 | INFO | SUCCESS: Beginner Code Explainer
+2026-10-06 15:35:33,817 | INFO | Processing agent: Project Risk Intelligence Advisor
+2026-10-06 15:36:28,153 | INFO | SUCCESS: Project Risk Intelligence Advisor
+2026-10-06 15:36:28,154 | INFO | Processing agent: Meeting Notes & Action Item Summarizer
+2026-10-06 15:37:07,458 | INFO | SUCCESS: Meeting Notes & Action Item Summarizer
+2026-10-06 15:37:07,460 | INFO | Processing agent: Professional Email Writer & Polisher
+2026-10-06 15:37:52,484 | INFO | SUCCESS: Professional Email Writer & Polisher
+2026-10-06 15:37:52,486 | INFO | Saved output/migration_results.csv
+2026-10-06 15:37:52,533 | INFO | Automation finished.
+2026-10-06 15:55:17,491 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 15:55:17,491 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 15:55:17,502 | INFO | Total CSV records: 6
+2026-10-06 15:55:17,502 | INFO | Valid records: 6
+2026-10-06 15:55:17,503 | INFO | Invalid records: 0
+2026-10-06 15:55:17,503 | INFO | Records selected for processing: 6
+2026-10-06 15:55:18,147 | INFO | Connected to existing Chrome session.
+2026-10-06 15:55:21,986 | INFO | Gemini Enterprise opened.
+2026-10-06 15:55:21,988 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 15:56:09,367 | ERROR | Failed to process Cloud Cost Optimization Intelligence Agent: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_text("WidgetService.WidgetDeployLowCodeAgent")
+Traceback (most recent call last):
+  File "/Users/rajashrikongare/gemini_agent_automation/main.py", line 178, in main
+    creator.wait_for_creation_success()
+  File "/Users/rajashrikongare/gemini_agent_automation/src/agent_creator.py", line 236, in wait_for_creation_success
+    raise Exception("Backend rejected creation: " + error_toast.text_content())
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 20442, in text_content
+    self._sync(self._impl_obj.text_content(timeout=to_milliseconds(timeout)))
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 688, in text_content
+    return await self._frame.text_content(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 737, in text_content
+    return await self._channel.send(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajashrikongare/gemini_agent_automation/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for get_by_text("WidgetService.WidgetDeployLowCodeAgent")
+
+2026-10-06 15:56:16,812 | INFO | Processing agent: Data Quality & Governance Intelligence Agent
+2026-10-06 15:56:55,197 | INFO | SUCCESS: Data Quality & Governance Intelligence Agent
+2026-10-06 15:56:55,197 | INFO | Processing agent: Beginner Code Explainer
+2026-10-06 15:57:29,998 | INFO | SUCCESS: Beginner Code Explainer
+2026-10-06 15:57:29,999 | INFO | Processing agent: Project Risk Intelligence Advisor
+2026-10-06 15:58:10,232 | INFO | SUCCESS: Project Risk Intelligence Advisor
+2026-10-06 15:58:10,233 | INFO | Processing agent: Meeting Notes & Action Item Summarizer
+2026-10-06 15:59:20,648 | INFO | SUCCESS: Meeting Notes & Action Item Summarizer
+2026-10-06 15:59:20,649 | INFO | Processing agent: Professional Email Writer & Polisher
+2026-10-06 16:00:02,516 | INFO | SUCCESS: Professional Email Writer & Polisher
+2026-10-06 16:00:02,518 | INFO | Saved output/migration_results.csv
+2026-10-06 16:00:02,575 | INFO | Automation finished.
+2026-10-06 16:10:48,893 | INFO | Starting CSV → Gemini Enterprise automation
+2026-10-06 16:10:48,893 | INFO | CSV: data/centeralised demo sheet - centeralised demo sheet.csv
+2026-10-06 16:10:48,900 | INFO | Total CSV records: 6
+2026-10-06 16:10:48,900 | INFO | Valid records: 6
+2026-10-06 16:10:48,900 | INFO | Invalid records: 0
+2026-10-06 16:10:48,900 | INFO | Records selected for processing: 6
+2026-10-06 16:10:49,511 | INFO | Connected to existing Chrome session.
+2026-10-06 16:10:54,950 | INFO | Gemini Enterprise opened.
+2026-10-06 16:10:54,951 | INFO | Processing agent: Cloud Cost Optimization Intelligence Agent
+2026-10-06 16:11:35,533 | INFO | SUCCESS: Cloud Cost Optimization Intelligence Agent
+2026-10-06 16:11:35,534 | INFO | Processing agent: Data Quality & Governance Intelligence Agent
+2026-10-06 16:12:14,049 | INFO | SUCCESS: Data Quality & Governance Intelligence Agent
+2026-10-06 16:12:14,049 | INFO | Processing agent: Beginner Code Explainer
+2026-10-06 16:12:51,035 | INFO | SUCCESS: Beginner Code Explainer
+2026-10-06 16:12:51,035 | INFO | Processing agent: Project Risk Intelligence Advisor
+2026-10-06 16:13:29,669 | INFO | SUCCESS: Project Risk Intelligence Advisor
+2026-10-06 16:13:29,669 | INFO | Processing agent: Meeting Notes & Action Item Summarizer
+2026-10-06 16:14:07,068 | INFO | SUCCESS: Meeting Notes & Action Item Summarizer
+2026-10-06 16:14:07,069 | INFO | Processing agent: Professional Email Writer & Polisher
+2026-10-06 16:14:47,270 | INFO | SUCCESS: Professional Email Writer & Polisher
+2026-10-06 16:14:47,272 | INFO | Saved output/migration_results.csv
+2026-10-06 16:14:47,342 | INFO | Automation finished.
